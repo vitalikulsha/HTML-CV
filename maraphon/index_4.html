@@ -14,7 +14,6 @@
 
         h1 {
             font-size: 40px;
-            margin-top: 0;
         }
 
         h2 {
@@ -32,7 +31,7 @@
         }
 
         .cyan-text {
-            color: rgb(0, 240, 230);
+            color: rgb(100, 0, 120);
         }
 
         .white-text {
@@ -78,7 +77,7 @@
 
         .nav li a {
             text-decoration: none;
-            color: rgb(0, 240, 230);
+            color: rgb(100, 0, 120);
 
         }
 
@@ -93,32 +92,15 @@
         }
 
         .achievemnts {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0;
+            list-style-image: url("./pointer-ok-1.jpg");
         }
-
-        .achievemnts li {
-            background: url("pointer-ok-1.jpg") no-repeat left center;
-            padding-left: 70px;
-            margin: 20px 0;
-        }
-
 
         .str-point {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0;
-            column-count: 2;
+            list-style-image: url("./pointer-ok.png");
         }
 
-        .str-point li {
-            background: url("pointer-ok.png") no-repeat left center;
-            padding-left: 70px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            margin: 20px 0;
-            margin-top: 0;
+        .logo-img {
+            width: 980px;
         }
 
         .name-tag {
@@ -178,8 +160,8 @@
         input#submit {
             width: 250px;
             cursor: pointer;
-            background: rgb(95, 125, 165);
-            color: rgb(0, 240, 230);
+            background: rgb(140, 140, 255);
+            color: rgb(100, 0, 120);
             font-size: 24px;
        }
 
@@ -190,38 +172,6 @@
            font-size: 18px;
            font-weight: bold;
            text-align: center;
-           position: fixed;
-           bottom: 75px;
-           right: 80px;
-       }
-
-       .logo-container {
-           width: 980px;
-           height: 490px;
-           border-radius: 30px;
-           background-image: url("./MyPhoto.jpg");
-           background-size: cover;
-           box-shadow: 0 -100px 50px 0 black inset;
-       }
-
-       .text-overlap {
-            position: relative;
-            padding: 0 60px;
-            top: -80px;
-            margin: 0;
-       }
-
-       .link {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-            width: 300px;
-            margin: auto;
-       }
-
-       .img-link {
-           width: 64px;
        }
     </style>
 </head>
@@ -237,9 +187,8 @@
                     <li><a href="#private">Обо мне</a></li>
                     <li><a href="#contact">Контакты</a></li>
                 </ul>
-                <div class="logo-container"></div>
-                <p class="white-text paragraph text-overlap">
-                    Ведущий инженер-технолог на заводе <span class="bold-text">БЕЛДЖИ</span>. 
+                <img class="logo-img" src="./MyPhoto.jpg" alt="Портрет">
+                <p class="white-text paragraph">Ведущий инженер-технолог на заводе <span class="bold-text">БЕЛДЖИ</span>. 
                     Заинтересовался сферой IT. Самостоятельно изучаю <span class="bold-text">JAVA</span>.</p>
                 <h1 class="white-text">Инженер-технолог/конструктор, но начинающий junior java developer.</h1>
             </div>
@@ -306,27 +255,23 @@
             Из литературы предпочитаю классические детективные романы (Агата Кристи, Артур Конан Дойл), 
             ну и отдельно понравилась "Песнь льдя и пламени".</p>
             <div class="img-position">
+
                 <img class="radius-img" src="./img/pic-1.jpg" alt="pic 1">
                 <img class="radius-img" src="./img/pic-2.jpg" alt="pic 2">
+
                 <img class="radius-img" src="./img/pic-4.jpg" alt="pic 4">
             </div>
         </div>
 
         <div class="block1 no-padding-top" id="contact">
             <h2>Контакты</h2>
-            <div class="link">
-                <a href="https://vk.com/vitali_kulsha"><img class="img-link" src="./icon/icon-vk.ico" alt="vk"></a></li>
-                <a href="https://www.facebook.com/vitalikulsha/"><img class="img-link" src="./icon/icon-facebook.jpg" alt="facebook"></a>
-                <a href="https://www.linkedin.com/in/vitali-kulsha/"><img class="img-link" src="./icon/icon-linkedIn.png" alt="linkedin"></a>
-                <a href="https://github.com/vitalikulsha"><img class="img-link" src="./icon/icon-github.ico" alt="github"></a>
-            </div>
             <form action="/" method="POST" id="contact-form">
                 <input type="text" name="FIO" placeholder="Ф.И.О.">
                 <input type="email" name="email" placeholder="E-mail">
                 <textarea name="message" placeholder="Сообщение"></textarea>
                 <input type="submit" name="submit" id="submit" value="Оправить">
             </form>
-            <a id="gotop" href="#navigation"><img src="./up.ico" alt="up" style="width: 74px;"></a>
+            <a id="gotop" href="#navigation"><img src="./up.ico" alt="up" style="width: 74px;"> <br>вверх</a>
         </div>
     </div>
 </body>
