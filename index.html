@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitali Kulsha</title>
+	<link rel="icon" href="./icon.jpg">
     <style>
         html, body, p {
             margin: 0;
             padding: 0;
         }
 
+        h1 {
+            font-size: 40px;
+        }
+
         h2 {
             color: black;
-            margin-top: 0;
-            margin-bottom: 20px;
+            font-size: 36px;
         }
 
         .new-font {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
         }
 
         .bold-text {
@@ -26,7 +31,7 @@
         }
 
         .cyan-text {
-            color: rgb(0, 140, 255);
+            color: rgb(100, 0, 120);
         }
 
         .white-text {
@@ -38,14 +43,18 @@
         }
 
         .color-fon {
-            background: rgb(139, 3, 128);
+            background: rgb(95, 125, 165);
         }
 
         .block1 {
             width: 980px;
             margin: auto;
-            padding-top: 30px;
-            padding-bottom: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .block1.no-padding-top {
+            padding-top: 0;
         }
 
         .nav {
@@ -56,6 +65,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 40px;
+            font-size: 20px;
         }
         
         .nav li {
@@ -63,6 +73,12 @@
             margin: 5px;
             padding: 5px;
             cursor: pointer;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: rgb(100, 0, 120);
+
         }
 
         .exp {
@@ -89,7 +105,7 @@
 
         .name-tag {
             font-size: 30px;
-            letter-spacing: 5px;
+            letter-spacing: 10px;
         }
 
         .paragraph {
@@ -102,34 +118,74 @@
             background-image: url("./java-banner.jpg");
             background-position: center;
             background-size: cover;
+            padding-bottom: 30px;
+            font-size: 24px;
         }
 
         .radius-img {
-            width: 240px;
-            border-radius: 10%;
+            width: 320px;
+            border-radius: 12%;
         }
 
         .img-position {
-            list-style: none;
-            padding: 0;
-            margin: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 20px;
         }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #contact-form input, #contact-form textarea {
+            padding: 20px;
+            margin-bottom: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            width: 934px;
+            outline: none;
+            border: none;
+            border: 3px solid rgb(0, 140, 255);
+            border-radius: 10px;
+        }
+
+        textarea {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 150px;
+        }
+        
+        input#submit {
+            width: 250px;
+            cursor: pointer;
+            background: rgb(140, 140, 255);
+            color: rgb(100, 0, 120);
+            font-size: 24px;
+       }
+
+       #gotop {
+           text-decoration: none;
+           display: inline-block;
+           border-radius: 10px;
+           font-size: 18px;
+           font-weight: bold;
+           text-align: center;
+       }
     </style>
 </head>
 <body class="gray-text new-font">
     <div>
         <div class="color-fon">
-            <div class="block1">
-                <ul class="cyan-text nav">
+            <div class="block1" id="navigation">
+                <ul class="cyan-text nav" style="padding-top: 20px;">
                     <li><span class="bold-text cyan-text name-tag">ВИТАЛИЙ<br>КУЛЬША</span></li>
-                    <li>Опыт работы</li>
-                    <li>Достижения</li>
-                    <li>Сильные строны</li>
-                    <li>Обо мне</li>
-                    <li>Контакты</li>
+                    <li><a href="#experience">Опыт работы</a></li>
+                    <li><a href="#achievemnts">Достижения</a></li>
+                    <li><a href="#strong">Сильные строны</a></li>
+                    <li><a href="#private">Обо мне</a></li>
+                    <li><a href="#contact">Контакты</a></li>
                 </ul>
                 <img class="logo-img" src="./MyPhoto.jpg" alt="Портрет">
                 <p class="white-text paragraph">Ведущий инженер-технолог на заводе <span class="bold-text">БЕЛДЖИ</span>. 
@@ -138,7 +194,7 @@
             </div>
         </div>
 
-        <div class="block1">
+        <div class="block1" id="experience">
             <h2>Опыт работы</h2>
             <ol class="exp">
                 <li><span class="bold-text">август 2005 - февраль 2008:</span> инженер-конструктор на Кузнечном заводе тяжелых штамповок, г. Жодино</li>
@@ -153,7 +209,7 @@
             </ol>
         </div>
 
-        <div class="block1">
+        <div class="block1 no-padding-top" id="achievemnts">
             <h2>Мои достижения</h2>
             <p>Гланые профессиональные достижения:</p>
             <ul class="achievemnts">
@@ -166,7 +222,7 @@
             </ul>
         </div>
 
-        <div class="block1">
+        <div class="block1 no-padding-top" id="strong">
             <h2>Мои сильные качества</h2>
             <ul class="str-point bold-text">
                 <li>Быстрообучаемость</li>
@@ -178,7 +234,7 @@
             </ul>
         </div>
 
-        <div class="hands-bg">        
+        <div class="hands-bg" id="slogan">        
             <div class="block1">
                 <h2 class="white-text">Мой принцип</h2>
                 <p class="white-text"><i>"Сделал дело - гуляй смело"</i></p>
@@ -186,8 +242,8 @@
         </div>
 
 
-        <div class="block1">
-            <h2>О себе</h2>
+        <div class="block1" id="private">
+            <h2>Обо мне</h2>
             <p class="paragraph">У меня математический склад ума, в школе очень нравилась математика и логические задачки. 
             В техникуме и университете также очень нравилось программирование, тогда еще на PASCAL. 
             И вот однажды осознав, что дальнейшее развитие на имеющейся должности становится не интересным, 
@@ -196,21 +252,26 @@
             В настояещее время обучаюсь в онлайн-лаборатории EPAM.
             Также прохожу бесплатные онлайн-курсы, форумы и марафоны по этой тематике. 
             Очень нравится вместе с женой организовывать мероприятия для своих друзей.
-            Из литературы предпочитаю классические детективные романы (Агата Кристи, Конан Дойл), 
+            Из литературы предпочитаю классические детективные романы (Агата Кристи, Артур Конан Дойл), 
             ну и отдельно понравилась "Песнь льдя и пламени".</p>
             <div class="img-position">
+
                 <img class="radius-img" src="./img/pic-1.jpg" alt="pic 1">
                 <img class="radius-img" src="./img/pic-2.jpg" alt="pic 2">
-                <img class="radius-img" src="./img/pic-3.jpg" alt="pic 3">
+
                 <img class="radius-img" src="./img/pic-4.jpg" alt="pic 4">
             </div>
         </div>
 
-        <div class="block1">
+        <div class="block1 no-padding-top" id="contact">
             <h2>Контакты</h2>
-            <form action="">
-                <input type="text" name="" id="">
+            <form action="/" method="POST" id="contact-form">
+                <input type="text" name="FIO" placeholder="Ф.И.О.">
+                <input type="email" name="email" placeholder="E-mail">
+                <textarea name="message" placeholder="Сообщение"></textarea>
+                <input type="submit" name="submit" id="submit" value="Оправить">
             </form>
+            <a id="gotop" href="#navigation"><img src="./up.ico" alt="up" style="width: 74px;"> <br>вверх</a>
         </div>
     </div>
 </body>
