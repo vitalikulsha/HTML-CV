@@ -74,17 +74,6 @@ h2 {
 .nav li a {
     text-decoration: none;
     color: rgb(150, 255, 255);
-
-}
-
-.exp {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.exp li {
-    margin: 10px 0;
 }
 
 .achievemnts {
