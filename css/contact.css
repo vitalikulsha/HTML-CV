@@ -1,0 +1,81 @@
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 934px;
+    outline: none;
+    border: none;
+    border: 3px solid rgb(0, 140, 255);
+    border-radius: 10px;
+}
+
+textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 150px;
+}
+
+input#submit {
+    width: 250px;
+    cursor: pointer;
+    background: rgb(95, 125, 165);
+    color: rgb(150, 255, 255);
+    font-size: 24px;
+}
+
+.contact {
+    width: 800px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;            
+}
+
+.contact li img {
+   width: 32px;
+}
+
+.text-contact{
+    position: relative;
+    top: -10px;
+    left: 10px;
+}
+
+.contact-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(95, 125, 165);
+    margin-bottom: 20px;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.img-link {
+   width: 64px;
+}
+
+.location {
+    background: url("../icon/belarus.png") no-repeat left center;
+    padding-left: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 20px 0;
+    margin-top: 0;
+}
