@@ -143,6 +143,14 @@ h2 {
     margin-top: 20px;
 }
 
+.img-scale {
+    transition: 1s;
+}
+
+.img-scale:hover {
+    transform: scale(1.8); 
+}
+
 #contact-form {
     display: flex;
     flex-direction: column;
