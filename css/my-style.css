@@ -90,7 +90,7 @@ h2 {
 }
 
 .achievemnts li {
-    background: url("pointer-ok-1.jpg") no-repeat left center;
+    background: url("../pointer-ok-1.jpg") no-repeat left center;
     padding-left: 70px;
     margin: 20px 0;
 }
@@ -104,7 +104,7 @@ h2 {
 }
 
 .str-point li {
-    background: url("pointer-ok.png") no-repeat left center;
+    background: url("../pointer-ok.png") no-repeat left center;
     padding-left: 70px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -124,7 +124,7 @@ h2 {
 }
 
 .hands-bg {
-    background-image: url("./java-banner.jpg");
+    background-image: url("../java-banner.jpg");
     background-position: center;
     background-size: cover;
     padding-bottom: 30px;
@@ -210,7 +210,7 @@ input#submit {
    width: 980px;
    height: 490px;
    border-radius: 30px;
-   background-image: url("./MyPhoto.jpg");
+   background-image: url("../MyPhoto.jpg");
    background-size: cover;
    box-shadow: 0 -100px 50px 0 black inset;
 }
@@ -260,6 +260,6 @@ input#submit {
 .contact-title {
     font-size: 18px;
     font-weight: bold;
-    color: rgb(95, 125, 165);;
+    color: rgb(95, 125, 165);
     margin-bottom: 20px;
 }
