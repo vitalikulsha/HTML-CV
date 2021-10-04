@@ -143,11 +143,11 @@ h2 {
     margin-top: 20px;
 }
 
-.img-scale {
+.scale-img {
     transition: 1s;
 }
 
-.img-scale:hover {
+.scale-img:hover {
     transform: scale(1.8); 
 }
 
