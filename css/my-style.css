@@ -196,6 +196,8 @@ h2 {
 }
 
 .button-CV {
+    width:50px;
+    height:25px;
     background-color: #4CAF50;
     border: none;
     border: 1px solid rgb(0, 140, 255);
