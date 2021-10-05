@@ -88,6 +88,12 @@ h2 {
     margin: 20px 0;
 }
 
+.java-skills li {
+    background: url("../pointer-ok-1.jpg") no-repeat left center;
+    padding-left: 70px;
+    margin: 20px 0;
+}
+
 .str-point {
     list-style: none;
     padding: 0;
