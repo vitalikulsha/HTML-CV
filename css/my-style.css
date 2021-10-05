@@ -88,6 +88,12 @@ h2 {
     margin: 20px 0;
 }
 
+.java-skills {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
 .java-skills li {
     background: url("../pointer-java.png") no-repeat left center;
     padding-left: 70px;
