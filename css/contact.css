@@ -79,3 +79,27 @@ input#submit {
     margin: 20px 0;
     margin-top: 0;
 }
+
+.button-CV {
+    width:150px;
+    height:25px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
