@@ -218,9 +218,3 @@ h2 {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
-a:hover {
-    text-decoration: none; /* Убираем подчеркивание */
-   color: white; /* Цвет ссылки при наведении на нее курсора мыши */  
-    background: #e24486;
-}
